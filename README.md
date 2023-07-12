@@ -2,6 +2,8 @@
 
 Convert a PNG file to a XPM file, using alpha channel as ARGB format.
 
+How to use :
+'python3 png_to_xpm.py input_file.png [output_name.xpm]'
 
 You may want to know :
 - The code is dirty, but hey, it works
