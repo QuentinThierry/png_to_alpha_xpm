@@ -6,7 +6,7 @@
 #    By: qthierry <qthierry@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/15 20:01:40 by qthierry          #+#    #+#              #
-#    Updated: 2023/07/12 23:36:50 by qthierry         ###   ########.fr        #
+#    Updated: 2023/10/26 17:58:54 by qthierry         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ def get_list2():
 					list_keys2.append(f'{chr(i)+ chr(j)}')
 	return list_keys2
 
-def get_list3(): #830584 size
+def get_list3(): #804357 size
 	list_keys3 = []
 	for i in range(32, 126):
 		if i != 34:
@@ -78,9 +78,9 @@ def pixels_to_xpm(pixels, filename):
 	char_per_pixels = 1
 	colums = len(pixels)
 	rows = round(len(pixels[0]) / depth)
-	if pixels_len <= 94:
+	if pixels_len <= 93:
 		list_keys = get_list1()
-	elif pixels_len <= 8836:
+	elif pixels_len <= 8649:
 		char_per_pixels = 2
 		list_keys = get_list2()
 	else:
